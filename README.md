@@ -1,8 +1,3 @@
 # RayTracerCPP
-Ray Tracer in C++
-This program will render 3D images using ray tracing alorithms.
-What's included:
-  All source files to make a ray tracer
-Note:
-  All code is uncompiled. You must use a compiler i.e. MinGW32 to create all binarys and executable.
-  makefile is provided, but my not be compatable with LINUX/UNIX machines
+Use the build.bat script to build the project in a clean repository by typing build in the repository that build.bat and source code is in into a command prompt. If the repository is clean, you will get a couple of errors because the files DNE yet; just ignore those errors. If you are not using Windows, a make file is provide so in a Linux/Mac terminal type "make all" (may have to type "sudo" before the command) to build the application. In Linux/Mac, to "clean" the directory, type "rm/ *.o *~raytracer" (note: you must have a gcc compiler installed and path variables correctly configured for that to work. If you are using MinGW you need to go to the bin folder, look for the mingw32-make application, and rename it to make)
+To run the application type: raytracer scenefile.txt pixelWidth pixelHeight into a command prompt or console. You should see output that will show the progress of the rendering process. When the process finishes, you should see your output image called output.ppm in the repository the executable is in. Windows does not support .ppm files out of the box, so you will need some program such as GNU image processor (GIMP) or some other application that you can find online. You can also use a program that will convert the .ppm into an image format that Windows supports. Linux/Mac machines will have a program installed to show .ppm files right out of the box. 
